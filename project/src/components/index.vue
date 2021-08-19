@@ -100,20 +100,141 @@
       </div>
       <div class="clear"></div>
     </section>
-    <section>6번</section>
+    <section>
+      <p class="big-font-1">
+        자주 묻는 질문
+      </p>
+      <div>
+        <ul>
+          <li
+            class="menu"
+            @click="dropdown"
+            v-for="(item, text) in litext"
+            :key="text"
+          >
+            <a>{{ item.text }}</a>
+            <ul class="hide">
+              <li class="submenu" v-html="sublitext"></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <p class="small-font">
+        시청할 준비가 되셨나요? 멤버십을 등록하거나 재시작하려면 이메일 주소를
+        입력하세요.
+      </p>
+      <input type="text" placeholder="이메일 주소" />
+      <a href="#"
+        ><button class="email-btn">
+          시작하기 &#62;
+        </button>
+      </a>
+    </section>
   </article>
 </template>
 
 <script>
+import $ from "jquery";
+
 export default {
   name: "index",
   data() {
-    return {};
+    return {
+      text: "",
+      litext: [
+        {
+          text: "넷플릭스란 무엇인가요?",
+        },
+        {
+          text: "넷플릭스 요금은 얼마인가요?",
+        },
+        {
+          text: "어디에서 시청할 수 있나요?",
+        },
+        {
+          text: "멤버십을 해지하려면 어떻게 하나요?",
+        },
+        {
+          text: "넷플릭스에서 어떤 콘텐츠를 시청할 수 있나요?",
+        },
+        {
+          text: "아이들이 넷플릭스를 봐도 좋을까요?",
+        },
+      ],
+
+      sublitext:
+        "넷플릭스는 각종 수상 경력에 빛나는 TV 프로그램, 영화,<br />애니메이션, 다큐멘터리 등 다양한 콘텐츠를 인터넷 연결이가능한<br />수천 종의 디바이스에서 시청할 수 있는 스트리밍 서비스입니다.<br /><br />저렴한 월 요금으로 일체의 광고 없이 원하는 시간에 원하는 만큼<br />즐길 수 있습니다. 무궁무진한 콘텐츠가 준비되어 있으며 매주<br />새로운 TV 프로그램과 영화가 제공됩니다.",
+    };
+  },
+  methods: {
+    dropdown() {
+      $(document).ready(function() {
+        $(".menu>a").click(function() {
+          $(this)
+            .next("ul")
+            .toggleClass("hide");
+        });
+      });
+    },
   },
 };
 </script>
 
 <style scoped>
+.menu a {
+  cursor: pointer;
+  margin: 0 auto;
+  padding: 0.8em 2.2em 0.8em 1.2em;
+  margin-bottom: 10px;
+  font-size: 1.625rem;
+  font-weight: 400;
+  position: relative;
+  display: block;
+  text-align: left;
+  background: #303030;
+  max-width: 800px;
+}
+
+.menu .hide {
+  display: none;
+}
+
+.submenu {
+  margin: 0 auto;
+  padding: 0.8em 2.2em 0.8em 1.2em;
+  margin-bottom: 1px;
+  font-weight: 400;
+  position: relative;
+  display: block;
+  text-align: left;
+  background: #303030;
+  max-width: 800px;
+  font-size: 1.625rem;
+}
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-align: left;
+}
+
+.li-main {
+  margin: 0 auto;
+  padding: 0.8em 2.2em 0.8em 1.2em;
+  margin-bottom: 1px;
+  font-weight: 400;
+  position: relative;
+  display: block;
+  text-align: left;
+  background: #303030;
+  max-width: 800px;
+}
+
+.li-sub {
+  overflow: hidden;
+}
+
 .top {
   width: 100%;
   height: 700px;
