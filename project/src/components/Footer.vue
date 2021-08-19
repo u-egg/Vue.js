@@ -1,7 +1,8 @@
 <template>
   <article>
+    <div id="footer-top"></div>
     <p class="title">
-      질문이 있으신가요? 문의 전화: 080-001-9587
+      {{ qustion }}
     </p>
     <div>
       <ui>
@@ -18,7 +19,7 @@
     </div>
     <div>
       <p class="title-text">
-        넷플릭스 대한민국
+        {{ titletext }}
       </p>
     </div>
     <div class="footer-text">
@@ -42,6 +43,8 @@ export default {
   name: "Footer",
   data() {
     return {
+      qustion: "질문이 있으신가요? 문의 전화: 080-001-9587",
+      titletext: "넷플릭스 대한민국",
       text: "",
       footerList: [
         {
@@ -133,6 +136,9 @@ select {
   margin: 30px 0;
 }
 
+#footer-top {
+  height: 50px;
+}
 .title {
   font-size: 1em;
   letter-spacing: 0.1em;
