@@ -104,8 +104,7 @@ export default {
 article {
   color: #757575;
   text-align: left;
-  min-width: 190px;
-  width: 100%;
+  width: 900px;
 }
 
 ul {

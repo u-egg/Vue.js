@@ -1,16 +1,21 @@
 <template>
-  <article>
+  <body>
+    <article>
+      <index />
+    </article>
     <Footer />
-  </article>
+  </body>
 </template>
 
 <script>
 import Footer from "./components/Footer.vue";
+import index from "./components/index.vue";
 
 export default {
   name: "App",
   components: {
     Footer,
+    index,
   },
 };
 </script>
@@ -24,12 +29,19 @@ export default {
   font-style: normal;
   font-display: swap;
 }
+
+body {
+  margin: 0px auto !important;
+  padding: 0px !important;
+  background-color: #000;
+  font-family: Helvetica;
+  color: #fff;
+  width: 100vw;
+  height: 100vh;
+}
+
 article {
   margin: 0 auto;
   text-align: center;
-  font-family: Helvetica;
-  color: #fff;
-  background: #222;
-  width: 1100px;
 }
 </style>
