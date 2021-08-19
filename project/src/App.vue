@@ -28,5 +28,8 @@ article {
   margin: 0 auto;
   text-align: center;
   font-family: Helvetica;
+  color: #fff;
+  background: #222;
+  width: 1100px;
 }
 </style>
