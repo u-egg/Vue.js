@@ -7,7 +7,7 @@
             <img class="logo" src="../assets/logo.png" />
           </div>
           <div class="nav-btn">
-            <a href="#">
+            <a href="/login">
               <button class="login-btn">로그인</button>
             </a>
           </div>
@@ -25,7 +25,7 @@
             주소를 입력하세요.
           </p>
           <input type="text" placeholder="이메일 주소" />
-          <a href="#"
+          <a href="/join"
             ><button class="email-btn">
               시작하기 &#62;
             </button>
@@ -126,7 +126,7 @@
       </p>
 
       <input type="text" placeholder="이메일 주소" />
-      <a href="#"
+      <a href="/join"
         ><button class="email-btn">
           시작하기 &#62;
         </button>

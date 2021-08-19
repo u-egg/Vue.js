@@ -1,24 +1,13 @@
 <template>
   <body>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <article>
-      <index />
-    </article>
-    <Footer />
+    <router-view />
   </body>
 </template>
 
 <script>
-import Footer from "./components/Footer.vue";
-import index from "./components/index.vue";
-
 export default {
   name: "App",
-  components: {
-    Footer,
-    index,
-  },
+  components: {},
 };
 </script>
 
