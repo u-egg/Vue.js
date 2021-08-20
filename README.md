@@ -2,18 +2,20 @@
 
 ## Font
 
-> Helvetica
+`Helvetica`
 
 ## Color
 
-> #fff , #000 , #757575 , #ed0914 , #f3f3f3 , #222 , #e50914
+` #fff , #000 , #757575 , #ed0914 , #f3f3f3 , #222 , #e50914`
 
 ## Library
 
-> jQuery, swiper
+`jQuery, Swiper`
 
 ## npm
 
-> npm i swiper
-> npm install --save sass-loader@10
-> npm install jquery
+`npm i swiper`
+
+`npm install --save sass-loader@10`
+
+`npm install jquery`
