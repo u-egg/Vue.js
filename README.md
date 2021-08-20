@@ -2,15 +2,15 @@
 
 ## Font
 
-> Helvetica
+`Helvetica`
 
 ## Color
 
-> #fff , #000 , #757575 , #ed0914 , #f3f3f3 , #222 , #e50914
+` #fff , #000 , #757575 , #ed0914 , #f3f3f3 , #222 , #e50914`
 
 ## Library
 
-> jQuery, Swiper
+`jQuery, Swiper`
 
 ## npm
 
