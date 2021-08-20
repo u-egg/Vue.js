@@ -3,6 +3,21 @@
     <img class="logo" src="../assets/logo.png" />
     <div class="layout">
       <p class="big-font2">넷플릭스를 시청할 프로필을 선택하세요</p>
+      <section>
+        1번 프로필 잘 추가해보도록 하자.
+      </section>
+      <section>
+        2번 프로필
+      </section>
+      <section>
+        3번 프로필
+      </section>
+      <section>
+        4번 프로필
+      </section>
+      <section>
+        5번 프로필
+      </section>
     </div>
   </article>
 </template>
@@ -39,5 +54,9 @@ article {
 .big-font2 {
   font-size: 3.625rem;
   font-weight: 500;
+}
+
+section {
+  display: inline-block;
 }
 </style>
