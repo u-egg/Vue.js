@@ -10,7 +10,7 @@
 
 ## Library
 
-> jQuery, swiper
+> jQuery, Swiper
 
 ## npm
 
