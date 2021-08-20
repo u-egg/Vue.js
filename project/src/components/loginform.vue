@@ -11,7 +11,9 @@
             placeholder="  이메일 주소 또는 전화번호"
           />
           <input type="password" id="pw" placeholder="  비밀번호" />
-          <button>로그인</button>
+          <a href="/profile">
+            <button>로그인</button>
+          </a>
         </from>
         <p class="text-1">
           Netflix 회원이 아닌가요?

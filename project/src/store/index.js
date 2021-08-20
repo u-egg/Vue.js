@@ -1,15 +1,18 @@
 // import { createStore } from 'vuex'
+// import Vuex from 'vuex'
 
-// // export default createStore({
-// //     state: {
+// Vue.use(Vuex)
 
-// //     },
-// //     mutations: {
+// export default createStore({
+//     state: {
 
-// //     },
-// //     actions: {
+//     },
+//     mutations: {
 
-// //     },
-// //     modules: {
-// //     }
-// // })
+//     },
+//     actions: {
+
+//     },
+//     modules: {
+//     }
+// })

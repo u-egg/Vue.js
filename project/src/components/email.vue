@@ -4,19 +4,21 @@
       시청할 준비가 되셨나요? 멤버십을 등록하거나 재시작하려면 이메일 주소를
       입력하세요.
     </p>
-
-    <input type="text" placeholder="이메일 주소" />
-    <a href="/join"
-      ><button class="email-btn">
+    <form action="/join">
+      <input type="email" placeholder="이메일 주소" v-model="email" />
+      <button class="email-btn">
         시작하기 &#62;
       </button>
-    </a>
+    </form>
   </article>
 </template>
 
 <script>
 export default {
   name: "email",
+  data() {
+    return {};
+  },
 };
 </script>
 

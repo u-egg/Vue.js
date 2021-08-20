@@ -14,7 +14,7 @@
         <p>
           이메일주소
           <br />
-          여기에 DB 이메일 주소 받아오기. readonly
+          adsad
           <br />
         </p>
         <p>
@@ -29,6 +29,13 @@
 <script>
 export default {
   name: "joinform",
+  props: {
+    value: {},
+  },
+  data() {
+    return {};
+  },
+  methods: {},
 };
 </script>
 
