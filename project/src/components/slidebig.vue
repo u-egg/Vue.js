@@ -24,7 +24,7 @@ import { Swiper, SwiperSlide } from "swiper/vue";
 import "swiper/swiper.scss";
 
 export default {
-  name: "slide",
+  name: "slidebig",
   data() {
     return {
       slideList: [{}, {}, {}, {}, {}, {}, {}],
@@ -59,7 +59,7 @@ article {
 }
 .slideimg {
   width: 250px;
-  height: 150px;
+  height: 450px;
   border-radius: 5px;
 }
 </style>

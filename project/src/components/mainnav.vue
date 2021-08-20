@@ -53,7 +53,9 @@ article {
   padding-bottom: 10px;
   position: fixed;
   z-index: 2;
+  background-color: #000;
 }
+
 .list {
   float: left;
 }
