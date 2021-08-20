@@ -21,4 +21,4 @@
 `npm install jquery`
 
 ## 수정할 점
-회원가입, 로그인, 폼검증 , DB연동 (
+회원가입, 로그인, 폼검증 , DB연동 (Backend)
