@@ -1,30 +1,18 @@
 <template>
   <article>
     <p class="slide-text">
-      애니메이션
+      {{ title }}
     </p>
     <swiper
       loop="true"
       :slides-per-view="7"
-      :space-between="50"
+      :space-between="200"
       @swiper="onSwiper"
       @slideChange="onSlideChange"
     >
-      <swiper-slide>Slide 1</swiper-slide>
-      <swiper-slide>Slide 2</swiper-slide>
-      <swiper-slide>Slide 3</swiper-slide>
-      <swiper-slide>Slide 1</swiper-slide>
-      <swiper-slide>Slide 2</swiper-slide>
-      <swiper-slide>Slide 2</swiper-slide>
-      <swiper-slide>Slide 3</swiper-slide>
-      <swiper-slide>Slide 3</swiper-slide>
-      <swiper-slide>Slide 1</swiper-slide>
-      <swiper-slide>Slide 2</swiper-slide>
-      <swiper-slide>Slide 2</swiper-slide>
-      <swiper-slide>Slide 3</swiper-slide>
-      <swiper-slide>Slide 1</swiper-slide>
-      <swiper-slide>Slide 2</swiper-slide>
-      <swiper-slide>Slide 2</swiper-slide>
+      <swiper-slide v-for="text in slideList" :key="text">
+        <img class="slideimg" v-bind:src="text.img" />
+      </swiper-slide>
     </swiper>
   </article>
 </template>
@@ -38,7 +26,32 @@ import "swiper/swiper.scss";
 export default {
   name: "slide",
   data() {
-    return {};
+    return {
+      title: "애니메이션",
+      slideList: [
+        {
+          img: "http://placeimg.com/640/480/any",
+        },
+        {
+          img: "http://placeimg.com/640/480/any",
+        },
+        {
+          img: "http://placeimg.com/640/480/any",
+        },
+        {
+          img: "http://placeimg.com/640/480/any",
+        },
+        {
+          img: "http://placeimg.com/640/480/any",
+        },
+        {
+          img: "http://placeimg.com/640/480/any",
+        },
+        {
+          img: "http://placeimg.com/640/480/any",
+        },
+      ],
+    };
   },
   components: {
     Swiper,
@@ -54,5 +67,18 @@ export default {
   },
 };
 </script>
-
-<style scoped></style>
+<style scoped>
+article {
+  margin-left: 50px;
+}
+.slide-text {
+  text-align: left;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+.slideimg {
+  width: 250px;
+  height: 150px;
+  border-radius: 5px;
+}
+</style>
