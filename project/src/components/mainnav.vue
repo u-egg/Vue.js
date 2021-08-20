@@ -52,6 +52,7 @@ article {
   padding-top: 20px;
   padding-bottom: 10px;
   position: fixed;
+  z-index: 2;
 }
 .list {
   float: left;
