@@ -35,4 +35,41 @@ article {
   margin: 0 auto;
   text-align: center;
 }
+
+.float-right {
+  float: right;
+}
+
+.float-left {
+  float: left;
+}
+.mid-font {
+  font-size: 1.625rem;
+  font-weight: 400;
+}
+
+.small-font {
+  font-size: 1.2rem;
+}
+
+.big-font {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.clear {
+  clear: both;
+}
+
+a:link {
+  color: red;
+  text-decoration: none;
+}
+a:visited {
+  color: black;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
 </style>
