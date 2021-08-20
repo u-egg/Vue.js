@@ -102,7 +102,8 @@ export default {
 article {
   color: #757575;
   text-align: left;
-  max-width: 900px;
+  background-color: #f3f3f3;
+  padding-left: 10%;
 }
 
 ul {
@@ -127,7 +128,7 @@ select {
   width: 130px;
   height: 40px;
   border: 1px solid #757575;
-  background-color: #222;
+  background-color: #fff;
   color: #757575;
   padding-left: 35px;
   margin: 30px 0;

@@ -70,6 +70,6 @@ a:visited {
   text-decoration: none;
 }
 a:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 </style>
