@@ -14,6 +14,6 @@
 
 ## npm
 
-> npm i swiper
+`npm i swiper`
 >> npm install --save sass-loader@10
 >>> npm install jquery
