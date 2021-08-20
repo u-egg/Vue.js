@@ -1,4 +1,4 @@
-# project
+# project (CloneCoding Netflix)
 
 ## Project setup
 ```
