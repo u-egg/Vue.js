@@ -1,9 +1,24 @@
 <template>
-  <h1>안녕 여기는 다른페이지야</h1>
+  <body>
+    <mainnav />
+    <mainbody />
+    <Footer />
+  </body>
 </template>
 
 <script>
-export default {};
+import Footer from "../components/Footer.vue";
+import mainnav from "../components/mainnav.vue";
+import mainbody from "../components/mainbody.vue";
+
+export default {
+  name: "Main",
+  components: { Footer, mainnav, mainbody },
+  data() {
+    return {};
+  },
+  methods: {},
+};
 </script>
 
 <style></style>
